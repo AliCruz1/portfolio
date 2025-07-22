@@ -1,16 +1,17 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Ali",
+  lastName: "Cruz III",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Computer Information Systems Graduate",
+  avatar: "/images/profile.jpg",
+  email: "a.c.shasho@gmail.com",
+  location: "America/New_York", // For time zone calculations
+  displayLocation: "Bronx, NY", // For display purposes
+  languages: ["English"],
 };
 
 const newsletter = {
@@ -25,22 +26,15 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/AliCruz1",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://linkedin.com/in/ali-cruz-iii",
   },
   {
     name: "Email",
@@ -82,115 +76,78 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm a recent Computer Information Systems graduate from Lehman College, Bronx, NY. I'm passionate about technology, organization, and teamwork. I enjoy building websites, streamlining digital content, and collaborating on tech-driven projects. I'm reliable, adaptable, and a quick learner, always looking for new ways to grow and help my team succeed.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Lehman College – Restaurant Reservation System",
+        timeframe: "Fall 2024",
+        role: "Team Member / System Organizer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Worked with a team to deliver a systems design project on a deadline.</>,
+          <>Managed tasks with organized workflows and clear communication.</>,
+          <>Ensured accuracy in system design and documentation.</>,
+          <>Collaborated closely with teammates to present a working prototype.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "IsaiahProtects.com – Freelance Web Development",
+        timeframe: "Spring 2025",
+        role: "Content Organizer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Organized website content and digital files efficiently.</>,
+          <>Followed project instructions with attention to detail.</>,
+          <>Tested site features for functionality and accuracy.</>,
+          <>Maintained communication and supported the project from start to finish.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Lehman College, City University of New York",
+        description: (
+          <>Bachelor of Science in Computer Information Systems (GPA: 3.3, Jan 2025). Relevant coursework: Database Management Systems, Information Systems Design, Systems Analysis, Data Management.</>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Skills & Certifications",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Office & Data Tools",
+        description: <>Proficient in Microsoft Word, Excel, and Google Workspace. Comfortable organizing, tracking, and managing data.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Web & Tech",
+        description: <>Basic experience with HTML, CSS, and web structure. Strong communication and teamwork skills. Reliable, punctual, and always ready to help. Comfortable using computers, office tools, and learning new systems. Physically capable of lifting up to 50 lbs and staying active.</>,
+        images: [],
+      },
+      {
+        title: "Certification",
+        description: <>Google IT Support Fundamentals (Coursera)</>,
+        images: [],
       },
     ],
   },
